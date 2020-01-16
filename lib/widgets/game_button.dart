@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class GameButton {
-  final id;
+  final int id;
   String text;
   Color bg;
   bool enabled;
