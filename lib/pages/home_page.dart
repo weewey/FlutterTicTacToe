@@ -194,9 +194,6 @@ class _HomePageState extends State<HomePage> {
 
   void resetGame() {
     if (Navigator.canPop(context)) Navigator.pop(context);
-    setState(() {
-      buttonsList = initGame();
-    });
   }
 
   @override
@@ -236,15 +233,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            RaisedButton(
-              child: Text(
-                "Reset",
-                style: TextStyle(color: Colors.white, fontSize: 20.0),
-              ),
-              color: Colors.red,
-              padding: const EdgeInsets.all(20.0),
-              onPressed: resetGame,
-            )
           ],
         ));
   }
